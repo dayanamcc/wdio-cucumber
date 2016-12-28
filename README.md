@@ -17,13 +17,23 @@ on my local machine
 create folder /feature/documentacion.feature
 
 
+
+#To run your tests, execute:
+npm run selenium
+npm test
+
+#Run Selenium manually
+open wdio.conf.js and edit   services: ['phantomjs']
+run: .\node_modules\.bin\selenium-standalone
+#Run test manually
+```shell
+$ .\node_modules\.bin\wdio wdio.conf.js
+
 #devDependencies
 npm install  --save-dev cucumber@1.3.1      
 npm install  --save-dev selenium-webdriver      
 
-#To run your tests, execute:
-  ```shell
-  $ .\node_modules\.bin\wdio wdio.conf.js
+
   ```
 #Notes
 - Firefox dont works Wdio, use instead phantomJS or Chrome
